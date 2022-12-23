@@ -16,13 +16,8 @@
   display: none;
 }
 
-.header {
-  background-image: url(../img/motos-deportivas_1.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 800px;
-  display: flex;
-  /* position: relative; */
+#carouselExampleControls {
+  margin-top: 5em;
 }
 
 .header .header__info {
@@ -79,6 +74,10 @@
     color: var(--hospital-yellow);
   }
 
+  .navbar-right {
+    max-width: 950px;
+  }
+
   .cards-container {
     margin: 2.5em;
     display: grid;
@@ -93,7 +92,6 @@
     width: 240px;
     height: 240px;
     border-radius: 20px;
-
   }
   .product-info {
     display: flex;
@@ -131,5 +129,13 @@
     .product-card img {
       width: 140px;
       height: 140px;
+    }
+    .navbar-left ul{
+      display: none;
+    }
+  }
+  @media (min-width: 640px) {
+    .container-fluid{
+      display: none;
     }
   }
