@@ -29,6 +29,14 @@ body {
   display: none;
 }
 
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: auto;
+}
+
 /* Navbar (general) */
 nav {
   display: flex;
@@ -128,6 +136,16 @@ nav {
 
 /**/
 @media (max-width: 640px) {
+  .bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto;
+  }
+  .mask {
+    padding: 30px 0;
+  }
   .cards-container {
     grid-template-columns: repeat(auto-fill, 140px);
   }
